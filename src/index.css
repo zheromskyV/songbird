@@ -5,3 +5,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
 }
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.hidden {
+  display: none !important;
+}

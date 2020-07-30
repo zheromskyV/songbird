@@ -1,0 +1,22 @@
+li a {
+  color: wheat;
+}
+
+.tabs {
+  max-width: fit-content;
+}
+
+.tabs::-webkit-scrollbar {
+  height: 5px;
+}
+.tabs::-webkit-scrollbar-track {
+  background: rgba(256, 256, 256, 0.1);
+  border-radius: 10px;
+}
+.tabs::-webkit-scrollbar-thumb {
+  background: rgba(256, 256, 256, 0.6);;
+  border-radius: 10px;
+}
+.tabs::-webkit-scrollbar-thumb:hover {
+  background: rgba(256, 256, 256, 0.9);
+}

@@ -2,18 +2,16 @@ import React from 'react';
 import './navigation.css';
 import NavItem from './NavItem';
 
-const tmpData: string[] = [
-  'Разминка',
-  'Воробьиные',
-  'Лесные птицы',
-  'Певчие птицы',
-  'Хищные птицы',
-  'Морские птицы',
-];
+type NavigationProps = {
+  categories: string[];
+  category: number;
+  setCategory: (idx: number) => void;
+};
 
-const Navigation: React.FC = () => {
-  const listItemOnClick = (event: React.MouseEvent) => {
+const Navigation: React.FC<NavigationProps> = ({ categories, category, setCategory }) => {
+  const onNavItemClick = (event: React.MouseEvent, idx: number) => {
     event.preventDefault();
+    setCategory(idx);
   };
 
   return (
@@ -22,12 +20,12 @@ const Navigation: React.FC = () => {
         <nav className="nav-extended deep-purple darken-3">
           <div className="wrapper nav-content">
             <ul className="tabs tabs-transparent">
-              {tmpData.map((item, idx) => (
+              {categories.map((item, idx) => (
                 <NavItem
                   key={idx}
                   title={item}
-                  onClick={listItemOnClick}
-                  isActive={idx === 0}
+                  onClick={(event: React.MouseEvent) => onNavItemClick(event, idx)}
+                  isActive={idx === category}
                   idx={idx}
                 />
               ))}

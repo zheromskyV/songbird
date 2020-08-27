@@ -20,3 +20,8 @@ li a {
 .tabs::-webkit-scrollbar-thumb:hover {
   background: rgba(256, 256, 256, 0.9);
 }
+
+.tabs .tab a:focus, .tabs .tab a:focus.active  {
+  outline: none;
+  background-color: transparent;
+}

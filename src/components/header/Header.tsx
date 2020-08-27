@@ -4,7 +4,14 @@ import Score from '../score/Score';
 import logoImg from '../../images/logo.png';
 import './header.css';
 
-const Header: React.FC = () => {
+type HeaderProps = {
+  categories: string[];
+  category: number;
+  setCategory: (idx: number) => void;
+  score: number;
+};
+
+const Header: React.FC<HeaderProps> = ({ categories, category, setCategory, score }) => {
   return (
     <React.Fragment>
       <div className="header deep-purple darken-3">
@@ -14,10 +21,10 @@ const Header: React.FC = () => {
               <img src={logoImg} alt="logo" />
               <h2>Songbird</h2>
             </div>
-            <Score score={110} />
+            <Score score={score} />
           </div>
         </div>
-        <Navigation />
+        <Navigation categories={categories} category={category} setCategory={setCategory} />
       </div>
     </React.Fragment>
   );

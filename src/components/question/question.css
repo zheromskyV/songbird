@@ -1,0 +1,10 @@
+.question {
+  margin: 10px 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.question h1 {
+  margin: 0;
+  padding: 0;
+}

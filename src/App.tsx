@@ -1,14 +1,13 @@
 import React from 'react';
 import Header from './components/header/Header';
+import Game from './components/game/Game';
 
 
 const App: React.FC = () => {
   return (
     <React.Fragment>
       <Header />
-      <div className="wrapper">
-        <h1>Hello Songbird</h1>
-      </div>
+      <Game />
     </React.Fragment>
   );
 };

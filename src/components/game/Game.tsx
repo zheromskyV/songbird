@@ -21,11 +21,11 @@ const Game: React.FC<GameProps> = ({ data }) => {
             name={question.name}
             image={question.image}
             audio={question.audio}
-            isAnswered={true}
+            isAnswered={false}
           />
           <div className="game__two-cols">
             <Answers />
-            <Description />
+            <Description bird={question} isAnswered={true} />
           </div>
           <NextButton />
         </div>

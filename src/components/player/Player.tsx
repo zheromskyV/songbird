@@ -11,7 +11,7 @@ const Player: React.FC<PlayerProps> = ({ audio }) => {
   return (
     <ReactAudioPlayer
       src={audio}
-      className="question__player"
+      className="player"
       autoPlayAfterSrcChange={false}
       showJumpControls={false}
       autoPlay={false}

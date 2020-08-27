@@ -43,3 +43,10 @@ button:focus {
 .rhap_time {
   width: 45px;
 }
+
+/* @media (max-width: 500px) {
+  .rhap_container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+} */

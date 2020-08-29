@@ -5,7 +5,44 @@
   width: 100%;
 }
 
-.answers h1 {
-  margin: 0;
+.answer {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  transition: all .3s ease-out;
+}
+
+.answer:hover {
+  cursor: pointer;
+  background-color: #9575cd !important; /* deep-purple lighten-2 */ 
+}
+
+.answer__text {
+  font-size: 36px;
+  font-weight: 500;
   padding: 0;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.answer__indicator {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 6px solid #757575; /* grey darken-1 */
+  border-radius: 6px;
+  margin: 0 5px 0 10px;
+  padding: 0;
+}
+
+.answer__indicator_correct {
+  border-color: #43a047; /* green darken-1 */
+}
+
+.answer__indicator_wrong {
+  border-color: #e53935; /* red darken-1 */
 }

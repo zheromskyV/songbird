@@ -6,7 +6,7 @@ import { birdsData } from './data/birds';
 
 const App: React.FC = () => {
   const [category, setCategory] = React.useState(0);
-  const [score] = React.useState(0);
+  const [score, setScore] = React.useState(0);
 
   return (
     <React.Fragment>
@@ -16,7 +16,7 @@ const App: React.FC = () => {
         setCategory={setCategory}
         score={score}
       />
-      <Game data={birdsData[category].birds} />
+      <Game data={birdsData[category].birds} category={category} setScore={setScore} />
     </React.Fragment>
   );
 };

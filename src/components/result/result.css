@@ -1,0 +1,28 @@
+.result {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.result h2, .result h3, .result h4 {
+  margin: 10px 0;
+}
+
+.result h2 {
+  font-weight: 500;
+}
+
+.result h3 span {
+  font-weight: 500;
+}
+
+.result img {
+  margin: 10px;
+  border-radius: 10px;
+  width: 400px;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Answer from './Answer';
 import { IBird } from '../../constants/interfaces';
+import { DEFAULT_ROUND_SCORE } from '../../constants/defaults';
 import './answers.css';
 
 type AnswersProps = {
@@ -22,7 +23,7 @@ const Answers: React.FC<AnswersProps> = ({
   setIsCorrectAnswerFound,
   setScore,
 }) => {
-  const [roundScore, setRoundScore] = React.useState(5);
+  const [roundScore, setRoundScore] = React.useState(DEFAULT_ROUND_SCORE);
 
   const isCorrectAnswer = (idx: number) => correctAnswer === idx;
 

@@ -4,21 +4,36 @@ import Answers from '../answers/Answers';
 import Description from '../description/Description';
 import NextButton from './NextButton';
 import { IBird } from '../../constants/interfaces';
+import { DEFAULT_CHOICE } from '../../constants/defaults';
+import { getRandomInt } from '../../helpers/math-helper';
 import './game.css';
 
 type GameProps = {
   data: IBird[];
   category: number;
   setScore: (score: any) => void;
+  setCategory: (category: any) => void;
 };
 
-const Game: React.FC<GameProps> = ({ data, category, setScore }) => {
-  const rightAnswer = 3;
-  const question = data[rightAnswer];
-
-  const [choice, setChoice] = React.useState(-1);
-
+const Game: React.FC<GameProps> = ({ data, category, setScore, setCategory }) => {
+  const [rightAnswer, setRightAnswer] = React.useState(getRandomInt(data.length));
+  const [question, setQuestion] = React.useState(data[rightAnswer]);
+  const [choice, setChoice] = React.useState(DEFAULT_CHOICE);
   const [isCorrectAnswerFound, setIsCorrectAnswerFound] = React.useState(false);
+
+  const onNextButtonClick = () => {
+    if (isCorrectAnswerFound) {
+      setRightAnswer(getRandomInt(data.length));
+      setQuestion(data[rightAnswer]);
+      setChoice(DEFAULT_CHOICE);
+      setCategory((prevCategory: number) => {
+        if (prevCategory === data.length - 1) {
+          return 0;
+        }
+        return prevCategory + 1;
+      });
+    }
+  };
 
   return (
     <React.Fragment>
@@ -40,9 +55,9 @@ const Game: React.FC<GameProps> = ({ data, category, setScore }) => {
               setIsCorrectAnswerFound={setIsCorrectAnswerFound}
               setScore={setScore}
             />
-            <Description bird={data[choice]} isAnswered={choice !== -1} />
+            <Description bird={data[choice]} isAnswered={choice !== DEFAULT_CHOICE} />
           </div>
-          <NextButton />
+          <NextButton onClick={onNextButtonClick} />
         </div>
       </div>
     </React.Fragment>

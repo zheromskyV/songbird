@@ -16,7 +16,7 @@ const App: React.FC = () => {
         setCategory={setCategory}
         score={score}
       />
-      <Game data={birdsData[category].birds} category={category} setScore={setScore} />
+      <Game data={birdsData[category].birds} category={category} setScore={setScore} setCategory={setCategory} />
     </React.Fragment>
   );
 };

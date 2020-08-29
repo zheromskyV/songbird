@@ -1,4 +1,5 @@
 import React from 'react';
+import { DEFAULT_ROUND_SCORE, ROUND_SCORE_REDUCER } from '../../constants/defaults';
 import './answers.css';
 
 type AnswerProps = {
@@ -29,7 +30,7 @@ const Answer: React.FC<AnswerProps> = ({
   React.useEffect(() => {
     setIsAnswered(false);
     setIsCorrectAnswerFound(false);
-    setRoundScore(5);
+    setRoundScore(DEFAULT_ROUND_SCORE);
   }, [category]); // eslint-disable-line
 
   const onCorrectAnswer = () => {
@@ -40,7 +41,7 @@ const Answer: React.FC<AnswerProps> = ({
   const onWrongAnswer = () => {
     setRoundScore((prevRoundScore: number) => {
       if (prevRoundScore > 0) {
-        return prevRoundScore - 1;
+        return prevRoundScore - ROUND_SCORE_REDUCER;
       }
       return 0;
     });

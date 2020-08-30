@@ -11,6 +11,7 @@
 
 .result h2, .result h3, .result h4 {
   margin: 10px 0;
+  text-align: center;
 }
 
 .result h2 {
@@ -25,4 +26,22 @@
   margin: 10px;
   border-radius: 10px;
   width: 400px;
+}
+
+@media (max-width: 700px) {
+  .result img {
+    width: 250px;
+  }
+
+  .result h2 {
+    font-size: 32px;
+  }
+
+  .result h3 {
+    font-size: 26px;
+  }
+
+  .result h4 {
+    font-size: 22px;
+  }
 }

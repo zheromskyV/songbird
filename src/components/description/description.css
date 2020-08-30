@@ -1,8 +1,10 @@
 .description {
-  margin: 10px 5px;
+  margin: 10px 0;
+  margin-left: 5px;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
+  min-height: 436px;
 }
 
 .description__main-flex {
@@ -78,6 +80,7 @@
 .description__desc {
   width: 100%;
   margin: 5px;
+  margin-top: 0;
   padding: 5px;
 }
 
@@ -98,8 +101,15 @@
     margin: 0 5px;
     padding: 0 5px;
   }
-}
 
+  .description__desc p {
+    font-size: 16px;
+  }
+
+  .description__unanswered p {
+    font-size: 20px;
+  }
+}
 
 .description__unanswered {
   width: 100%;
@@ -109,4 +119,12 @@
   font-size: 24px;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 850px) {
+  .description {
+    margin: 10px 0;
+    margin-top: 5px;
+    min-height: fit-content;
+  }
 }

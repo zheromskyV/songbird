@@ -3,7 +3,7 @@ body {
   font-family: 'Montserrat', Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  user-select: none;
+  background-color: #b39ddb; /* deep-purple lighten-3 */
 }
 
 .wrapper {

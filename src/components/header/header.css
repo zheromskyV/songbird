@@ -13,6 +13,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .logo {
@@ -20,7 +22,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 10px 0;
+  margin: 5px 0;
+  user-select: none;
 }
 
 .brand-logo img {
@@ -30,4 +33,10 @@
 .brand-logo h2 {
   margin: 0 15px;
   color: 	#ffffffee;
+}
+
+@media (max-width: 500px) {
+  .brand-logo {
+    justify-content: center;
+  }
 }

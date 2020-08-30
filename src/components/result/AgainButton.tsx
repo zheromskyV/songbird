@@ -9,7 +9,7 @@ const AgainButton: React.FC<AgainButtonButtonProps> = ({ onClick }) => {
   return (
     <React.Fragment>
       <div className="game__next-btn" onClick={onClick}>
-        <button className="next-btn deep-purple lighten-3">Play again</button>
+        <button className="next-btn deep-purple lighten-2">Play again</button>
       </div>
     </React.Fragment>
   );

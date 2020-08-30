@@ -31,8 +31,21 @@
 }
 .next-btn:hover {
   cursor: pointer;
+  background-color: #7e57c2 !important; /* deep-purple lighten-1 */
+}
+
+.next-btn_active {
   background-color: #9575cd !important; /* deep-purple lighten-2 */
 }
+
+.next-btn_unactive {
+  background-color: #d1c4e9 !important; /* deep-purple lighten-4 */
+}
+
+.next-btn_unactive:hover {
+  background-color: #d1c4e9 !important; /* deep-purple lighten-4 */
+}
+
 
 
 @media (max-width: 850px) {

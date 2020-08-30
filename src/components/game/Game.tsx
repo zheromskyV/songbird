@@ -78,7 +78,7 @@ const Game: React.FC<GameProps> = ({ data, category, score, setScore, setCategor
                 />
                 <Description bird={data[choice]} isAnswered={choice !== DEFAULT_CHOICE} />
               </div>
-              <NextButton onClick={onNextButtonClick} />
+              <NextButton onClick={onNextButtonClick} isActive={isCorrectAnswerFound} />
             </React.Fragment>
           )}
           {!isGaming && <Result score={score} onAgainButtonClick={onAgainButtonClick} />}

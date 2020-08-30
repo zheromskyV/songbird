@@ -1,5 +1,7 @@
 import React from 'react';
 import { DEFAULT_ROUND_SCORE, ROUND_SCORE_REDUCER } from '../../constants/defaults';
+import successSound from '../../audio/success.mp3';
+import failSound from '../../audio/fail.mp3';
 import './answers.css';
 
 type AnswerProps = {
@@ -36,6 +38,8 @@ const Answer: React.FC<AnswerProps> = ({
   const onCorrectAnswer = () => {
     setIsCorrectAnswerFound(true);
     setScore((prevScore: number) => prevScore + roundScore);
+    const audio = new Audio(successSound);
+    audio.play();
   };
 
   const onWrongAnswer = () => {
@@ -45,6 +49,8 @@ const Answer: React.FC<AnswerProps> = ({
       }
       return 0;
     });
+    const audio = new Audio(failSound);
+    audio.play();
   };
 
   const onAnswerClick = () => {

@@ -4,6 +4,8 @@ li a {
 
 .tabs {
   max-width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .tabs::-webkit-scrollbar {

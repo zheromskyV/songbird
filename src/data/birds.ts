@@ -22,7 +22,7 @@ export const birdsData: IBirdGroup[] = [
           'Название своё получил потому, что был священной птицей в древнем Египте. Ибис был символом Тота, бога мудрости и правосудия, которому часто поклонялись в образе Ибиса. В храме Тота содержались многочисленные ибисы. Трупы ибисов подвергались бальзамированию. В древнем Египте ибисы были весьма многочисленны и беспрепятственно водились даже в городах.',
         image: 'https://otvet.imgsmail.ru/download/02116b456e8e5303a3145436bbf45aaa_i-3183.jpg',
         audio:
-          '//www.xeno-canto.org/sounds/uploaded/YTUXOCTUEM/XC515436-Threskiornis_aethiopicus-FL%20calls%20HoudebekFarm%2022Oct19%205.38am%20LS114790b.mp3',
+          'https:////www.xeno-canto.org/sounds/uploaded/YTUXOCTUEM/XC515436-Threskiornis_aethiopicus-FL%20calls%20HoudebekFarm%2022Oct19%205.38am%20LS114790b.mp3',
       },
       {
         id: 3,
@@ -31,7 +31,7 @@ export const birdsData: IBirdGroup[] = [
         description:
           'Внешность весьма характерна. Это длинноногая, длинношеяя птица, серой окраски сверху и белой снизу, с включениями чёрного цвета, с довольно длинным острым клювом. Размеры достаточно большие, вес взрослого самца может достигать 2 кг. Самки несколько меньше самцов, однако в остальном от них почти не отличаются.',
         image: 'https://www.ebirds.ru/images/e/23.jpg',
-        audio: '//www.xeno-canto.org/sounds/uploaded/INCBVJJLBJ/XC573925-Default%20Project.mp3',
+        audio: 'https:////www.xeno-canto.org/sounds/uploaded/INCBVJJLBJ/XC573925-Default%20Project.mp3',
       },
       {
         id: 4,
@@ -51,7 +51,7 @@ export const birdsData: IBirdGroup[] = [
           'Очень маленькая цапля, средняя длина тела которой лишь 30 см. Окрас тёмно-коричневый с белыми и коричневыми полосками. Летают с трудом и недалеко. Кормятся по ночам, ловя рыбу, ракообразных и насекомых, таких, как стрекозы и водяные жуки. Строят небольшое гнездо, в кладке три яйца.',
         image: 'https://farm5.staticflickr.com/4734/39321937422_3b254a9f72_z.jpg',
         audio:
-          '//www.xeno-canto.org/sounds/uploaded/XZZZSJRILA/Stripe-backed%20Bittern%20%28Paraguay%2980.mp3',
+          'https:////www.xeno-canto.org/sounds/uploaded/XZZZSJRILA/Stripe-backed%20Bittern%20%28Paraguay%2980.mp3',
       },
       {
         id: 6,
@@ -61,7 +61,7 @@ export const birdsData: IBirdGroup[] = [
           'Занесён в красные книги Белоруссии, Болгарии, Казахстана, Узбекистана, Украины, Таджикистана и РФ, а также отдельных её регионов. Образ жизни чёрного аиста изучен слабо. Эта скрытная птица, в отличие от белого аиста, не любит соседства с человеком и предпочитает селиться в глухих, старых лесах на равнинах и предгорьях возле водоёмов — лесных озёр, рек, болот.',
         image: 'https://echo.msk.ru/files/2775756.jpg',
         audio:
-          '//www.xeno-canto.org/sounds/uploaded/WIPMNWUHXI/XC421078-Zwooi%28j%29_Karula_20180612_1656.mp3',
+          'https:////www.xeno-canto.org/sounds/uploaded/WIPMNWUHXI/XC421078-Zwooi%28j%29_Karula_20180612_1656.mp3',
       },
     ],
   },
@@ -142,7 +142,7 @@ export const birdsData: IBirdGroup[] = [
         description:
           'Размер голубой сойки составляет около 30 см, а размах крыльев насчитывает около 42 см. Её вес составляет от 70 до 100 г. Характерным признаком является голубая спинка, короткий синий гребешок, чёрное ожерелье, сине-чёрно-белый узор на крыльях и чёрно-белый полосатый хвост.',
         image: 'https://otvet.imgsmail.ru/download/c51d441bdd841a43969d6751f1257dd8_i-798.jpg',
-        audio: '//www.xeno-canto.org/sounds/uploaded/MGVGHKBMIZ/XC585265-BlueJay18.mp3',
+        audio: 'https:////www.xeno-canto.org/sounds/uploaded/MGVGHKBMIZ/XC585265-BlueJay18.mp3',
       },
       {
         id: 2,

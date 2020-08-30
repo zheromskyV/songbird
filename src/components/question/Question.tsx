@@ -8,9 +8,10 @@ type QuestionProps = {
   image: string;
   audio: string;
   isAnswered?: boolean;
+  isCorrectAnswerFound?: boolean;
 };
 
-const Question: React.FC<QuestionProps> = ({ name, image, audio, isAnswered = false }) => {
+const Question: React.FC<QuestionProps> = ({ name, image, audio, isAnswered = false, isCorrectAnswerFound = false }) => {
   return (
     <React.Fragment>
       <div className="question deep-purple lighten-4">
@@ -27,7 +28,7 @@ const Question: React.FC<QuestionProps> = ({ name, image, audio, isAnswered = fa
               <p>{isAnswered ? name : '******'}</p>
               <hr className="question__line" />
             </div>
-            <Player audio={audio} />
+            <Player audio={audio} isCorrectAnswerFound={isCorrectAnswerFound} />
           </div>
         </div>
       </div>

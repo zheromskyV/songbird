@@ -5,9 +5,15 @@ import './player.css';
 
 type PlayerProps = {
   audio: string;
+  isCorrectAnswerFound?: boolean;
 };
 
-const Player: React.FC<PlayerProps> = ({ audio }) => {
+const Player: React.FC<PlayerProps> = ({ audio, isCorrectAnswerFound = undefined }) => {
+  let ref: any = React.useRef();
+  React.useEffect(() => {
+    ref.audio.current.pause();
+  }, [isCorrectAnswerFound]);
+
   return (
     <ReactAudioPlayer
       src={audio}
@@ -16,6 +22,7 @@ const Player: React.FC<PlayerProps> = ({ audio }) => {
       showJumpControls={false}
       autoPlay={false}
       layout={'horizontal'}
+      ref={(elem) => (ref = elem)}
     />
   );
 };

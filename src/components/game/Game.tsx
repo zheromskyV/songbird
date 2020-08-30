@@ -65,6 +65,7 @@ const Game: React.FC<GameProps> = ({ data, category, score, setScore, setCategor
                 image={question.image}
                 audio={question.audio}
                 isAnswered={isCorrectAnswerFound}
+                isCorrectAnswerFound={isCorrectAnswerFound}
               />
               <div className="game__two-cols">
                 <Answers

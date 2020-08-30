@@ -1,6 +1,6 @@
 import React from 'react';
 import Player from '../player/Player';
-import defaultImage from '../../images/logo.png';
+import defaultImage from '../../assets/images/logo.png';
 import './question.css';
 
 type QuestionProps = {

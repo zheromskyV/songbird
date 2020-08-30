@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../navigation/Navigation';
 import Score from '../score/Score';
-import logoImg from '../../images/logo.png';
+import logoImg from '../../assets/images/logo.png';
 import './header.css';
 
 type HeaderProps = {

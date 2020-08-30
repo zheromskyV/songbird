@@ -1,7 +1,7 @@
 import React from 'react';
 import AgainButton from './AgainButton';
 import { MAX_SCORE } from '../../constants/defaults';
-import congratsImg from '../../images/congrats.jpg';
+import congratsImg from '../../assets/images/congrats.jpg';
 import './result.css';
 
 type ResultProps = {

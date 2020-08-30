@@ -1,7 +1,7 @@
 import React from 'react';
 import { DEFAULT_ROUND_SCORE, ROUND_SCORE_REDUCER } from '../../constants/defaults';
-import successSound from '../../audio/success.mp3';
-import failSound from '../../audio/fail.mp3';
+import successSound from '../../assets/audio/success.mp3';
+import failSound from '../../assets/audio/fail.mp3';
 import './answers.css';
 
 type AnswerProps = {

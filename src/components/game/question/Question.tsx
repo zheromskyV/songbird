@@ -1,6 +1,6 @@
 import React from 'react';
-import Player from '../player/Player';
-import defaultImage from '../../assets/images/logo.png';
+import Player from '../../player/Player';
+import defaultImage from '../../../assets/images/logo.png';
 import './question.css';
 
 type QuestionProps = {
@@ -11,7 +11,13 @@ type QuestionProps = {
   isCorrectAnswerFound?: boolean;
 };
 
-const Question: React.FC<QuestionProps> = ({ name, image, audio, isAnswered = false, isCorrectAnswerFound = false }) => {
+const Question: React.FC<QuestionProps> = ({
+  name,
+  image,
+  audio,
+  isAnswered = false,
+  isCorrectAnswerFound = false,
+}) => {
   return (
     <React.Fragment>
       <div className="question deep-purple lighten-4">

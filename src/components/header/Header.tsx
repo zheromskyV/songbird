@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from '../navigation/Navigation';
+import Navigation from './navigation/Navigation';
 import Score from '../score/Score';
 import logoImg from '../../assets/images/logo.png';
 import './header.css';

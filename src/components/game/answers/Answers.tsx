@@ -1,7 +1,7 @@
 import React from 'react';
 import Answer from './Answer';
-import { IBird } from '../../constants/interfaces';
-import { DEFAULT_ROUND_SCORE } from '../../constants/defaults';
+import { IBird } from '../../../constants/interfaces';
+import { DEFAULT_ROUND_SCORE } from '../../../constants/defaults';
 import './answers.css';
 
 type AnswersProps = {

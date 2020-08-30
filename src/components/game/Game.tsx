@@ -1,9 +1,9 @@
 import React from 'react';
-import Question from '../question/Question';
-import Answers from '../answers/Answers';
-import Description from '../description/Description';
+import Question from './question/Question';
+import Answers from './answers/Answers';
+import Description from './description/Description';
 import NextButton from './NextButton';
-import Result from '../result/Result';
+import Result from './result/Result';
 import { IBird } from '../../constants/interfaces';
 import { DEFAULT_CHOICE } from '../../constants/defaults';
 import { getRandomInt } from '../../helpers/math-helper';

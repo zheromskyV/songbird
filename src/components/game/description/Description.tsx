@@ -1,6 +1,6 @@
 import React from 'react';
-import Player from '../player/Player';
-import { IBird } from '../../constants/interfaces';
+import Player from '../../player/Player';
+import { IBird } from '../../../constants/interfaces';
 import './description.css';
 
 type DescriptionProps = {

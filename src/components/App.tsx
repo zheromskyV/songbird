@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './components/header/Header';
-import Game from './components/game/Game';
+import Header from './header/Header';
+import Game from './game/Game';
 
-import { birdsData } from './data/birds';
+import { birdsData } from '../data/birds';
 
 const App: React.FC = () => {
   const [category, setCategory] = React.useState(0);

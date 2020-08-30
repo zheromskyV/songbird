@@ -13,7 +13,6 @@ const App: React.FC = () => {
       <Header
         categories={birdsData.map(({ name }) => name)}
         category={category}
-        setCategory={setCategory}
         score={score}
       />
       <Game

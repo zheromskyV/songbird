@@ -25,3 +25,7 @@ li a {
   outline: none;
   background-color: transparent;
 }
+
+.tab a:hover, .tab:hover {
+  cursor: default;
+}

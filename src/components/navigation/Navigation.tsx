@@ -5,15 +5,9 @@ import NavItem from './NavItem';
 type NavigationProps = {
   categories: string[];
   category: number;
-  setCategory: (idx: number) => void;
 };
 
-const Navigation: React.FC<NavigationProps> = ({ categories, category, setCategory }) => {
-  const onNavItemClick = (event: React.MouseEvent, idx: number) => {
-    event.preventDefault();
-    setCategory(idx);
-  };
-
+const Navigation: React.FC<NavigationProps> = ({ categories, category }) => {
   return (
     <React.Fragment>
       <div className="navigation">
@@ -24,7 +18,7 @@ const Navigation: React.FC<NavigationProps> = ({ categories, category, setCatego
                 <NavItem
                   key={idx}
                   title={item}
-                  onClick={(event: React.MouseEvent) => onNavItemClick(event, idx)}
+                  onClick={(event: React.MouseEvent) => event.preventDefault()}
                   isActive={idx === category}
                   idx={idx}
                 />

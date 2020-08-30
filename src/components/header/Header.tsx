@@ -7,11 +7,10 @@ import './header.css';
 type HeaderProps = {
   categories: string[];
   category: number;
-  setCategory: (idx: number) => void;
   score: number;
 };
 
-const Header: React.FC<HeaderProps> = ({ categories, category, setCategory, score }) => {
+const Header: React.FC<HeaderProps> = ({ categories, category, score }) => {
   return (
     <React.Fragment>
       <div className="header deep-purple darken-3">
@@ -24,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ categories, category, setCategory, scor
             <Score score={score} />
           </div>
         </div>
-        <Navigation categories={categories} category={category} setCategory={setCategory} />
+        <Navigation categories={categories} category={category} />
       </div>
     </React.Fragment>
   );

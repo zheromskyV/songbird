@@ -20,7 +20,6 @@ type GameProps = {
 const Game: React.FC<GameProps> = ({ data, category, score, setScore, setCategory }) => {
   const [isGaming, setIsGaming] = React.useState(true);
   const [rightAnswer, setRightAnswer] = React.useState(getRandomInt(data.length));
-  const [question, setQuestion] = React.useState(data[rightAnswer]);
   const [choice, setChoice] = React.useState(DEFAULT_CHOICE);
   const [isCorrectAnswerFound, setIsCorrectAnswerFound] = React.useState(false);
 
@@ -30,13 +29,11 @@ const Game: React.FC<GameProps> = ({ data, category, score, setScore, setCategor
 
   const onRoundChange = () => {
     setRightAnswer(getRandomInt(data.length));
-    setQuestion(data[rightAnswer]);
     setChoice(DEFAULT_CHOICE);
   };
 
   const onNextButtonClick = () => {
     if (isCorrectAnswerFound) {
-      onRoundChange();
       setCategory((prevCategory: number) => {
         if (prevCategory === data.length - 1) {
           setIsGaming(false);
@@ -44,14 +41,15 @@ const Game: React.FC<GameProps> = ({ data, category, score, setScore, setCategor
         }
         return prevCategory + 1;
       });
+      onRoundChange();
     }
   };
 
   const onAgainButtonClick = () => {
     setIsGaming(true);
     setScore(0);
-    onRoundChange();
     setCategory(0);
+    onRoundChange();
   };
 
   return (
@@ -61,9 +59,9 @@ const Game: React.FC<GameProps> = ({ data, category, score, setScore, setCategor
           {isGaming && (
             <React.Fragment>
               <Question
-                name={question.name}
-                image={question.image}
-                audio={question.audio}
+                name={data[rightAnswer].name}
+                image={data[rightAnswer].image}
+                audio={data[rightAnswer].audio}
                 isAnswered={isCorrectAnswerFound}
                 isCorrectAnswerFound={isCorrectAnswerFound}
               />

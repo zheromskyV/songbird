@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #b39ddb; /* deep-purple lighten-3 */
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.hidden {
+  display: none !important;
+}

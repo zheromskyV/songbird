@@ -1,0 +1,131 @@
+.description {
+  margin: 10px 0;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 355px;
+}
+
+.description__main-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description__cols {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.description__rows {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.description__img-container {
+  min-width: 240px;
+  min-height: 160px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description__img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.description__name, .description__species {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  word-break: break-word;
+}
+
+.description__name p {
+  font-size: 36px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.description__line {
+  height: 2px;
+  background-color: #4527a0; /* deep-purple darken-3 */
+  border-radius: 10px;
+}
+
+.description__line_extra {
+  height: 1px;
+}
+
+.description__species p {
+  font-size: 24px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.description__desc {
+  width: 100%;
+  margin: 5px;
+  margin-top: 0;
+  padding: 5px;
+}
+
+.description__desc p {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+
+@media (max-width: 700px) {
+  .description__cols {
+    flex-direction: column;
+  }
+
+  .description__name, .description__species {
+    margin: 0 5px;
+    padding: 0 5px;
+  }
+
+  .description__desc p {
+    font-size: 16px;
+  }
+
+  .description__unanswered p {
+    font-size: 20px;
+  }
+}
+
+.description__unanswered {
+  width: 100%;
+}
+
+.description__unanswered p {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 850px) {
+  .description {
+    margin: 10px 0;
+    margin-top: 5px;
+    min-height: fit-content;
+  }
+}

@@ -1,0 +1,33 @@
+li a {
+  color: wheat;
+}
+
+.tabs {
+  max-width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.tabs::-webkit-scrollbar {
+  height: 5px;
+}
+.tabs::-webkit-scrollbar-track {
+  background: rgba(256, 256, 256, 0.1);
+  border-radius: 10px;
+}
+.tabs::-webkit-scrollbar-thumb {
+  background: rgba(256, 256, 256, 0.6);;
+  border-radius: 10px;
+}
+.tabs::-webkit-scrollbar-thumb:hover {
+  background: rgba(256, 256, 256, 0.9);
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active  {
+  outline: none;
+  background-color: transparent;
+}
+
+.tab a:hover, .tab:hover {
+  cursor: default;
+}
